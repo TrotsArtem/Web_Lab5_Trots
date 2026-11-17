@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset=utf-8>
+	<meta name="Author" content="Троц Артем">
+	<meta name="Description" content="Cторінка заповнення форми для замовлення меблів">
+	<meta name="Keywords" content="Веб сторiнка, development, HTML">
+	<title>Замовлення меблів</title>
+	<link rel="stylesheet" href="Table.css">
+</head>
+<body>
+    <header>
+        <h1>Замовлення меблів</h1>
+        <p>Заповніть форму нижче, щоб здійснити замовлення продукції нашої фірми.</p>
+    </header>
+    <main>
+        <form action="#" autocomplete="on" name="Замовлення" target="_blank">
+            <fieldset>
+                <legend>Особисті дані покупця</legend>
+                <p>
+                    <label for="fullname">Прізвище, ім'я та по батькові:</label><br>
+                    <input type="text" id="fullname" name="fullname" required autofocus placeholder="Іваненко Іван Іванович">
+                </p>
+                <p>
+                    <label for="phone">Номер телефону:</label><br>
+                    <input type="tel" id="phone" name="phone" required placeholder="+380XXXXXXXXX">
+                </p>
+                <p>
+                    <label for="email">Електронна пошта:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Параметри замовлення меблів</legend>
+                <p>
+                    <label for="furniture-type">Оберіть категорію меблів:</label><br>
+                    <select id="furniture-type" name="furniture_type" required>
+                        <option value="" disabled selected>-----</option>
+                        <option value="kitchen">Кухонні гарнітури</option>
+                        <option value="wardrobe">Шафи-купе</option>
+                        <option value="living-room">Вітальні та стінки</option>
+                        <option value="bedroom">Спальні кімнати</option>
+                        <option value="office">Офісні меблі</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="budget">Орієнтовний бюджет (грн):</label><br>
+                    <input type="range" id="budget" name="budget" min="5000" max="100000" step="1000" value="25000" oninput="this.nextElementSibling.value = this.value">
+                    <output>25000</output> грн
+                </p>
+                <p>
+                    <label for="drawing">Бажане фото або креслення проєкту (якщо є):</label><br>
+                    <input type="file" id="drawing" name="drawing" accept="image/*">
+                </p>
+                <p>
+                    <label for="comments">Додаткові побажання до замовлення:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Вкажіть розміри, колір або інші індивідуальні особливості..."></textarea>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Відправити інформацію">
+                <button type="reset">Очистити форму</button>
+            </p>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>© 2026 МебЛюкс. Усі права захищено.</p>
+    </footer>
+</body>
+</html>
