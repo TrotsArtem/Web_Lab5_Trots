@@ -1,0 +1,115 @@
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 24px;
+  background: #e4d8c7;
+  color: #271804;
+  font-family: Arial, monospace;
+  line-height: 1.6;
+}
+
+nav {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+a {
+  color: #704b20;
+}
+
+a:hover {
+  color: #271804;
+}
+
+h1 {
+  color: #271804;
+  font-family: "Courier New", monospace;
+  text-align: center;
+}
+
+.author-signature {
+  text-align: right;
+}
+
+.definition {
+  font-family:Arial, monospace;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 40px;
+  background-color: #f4d2a3;
+}
+
+th, td {
+  border: 1px solid;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: #ecb45f;
+}
+
+tr:nth-child(even) {
+  background-color: #ffd090;
+}
+
+.section-title {
+  margin-top: 40px;
+}
+
+article, section, aside {
+  margin: 24px 0;
+}
+
+footer {
+  margin-top: 24px;
+  text-align: center;
+}
+
+nav > a {
+  margin: 0 6px;
+}
+
+a[href] {
+  text-decoration: underline;
+}
+
+article > :first-child {
+  margin-top: 32px;
+}
+
+a:active {
+  color: #9a4d20;
+}
+
+tr:first-of-type { 
+  border-top: 4px solid #9a8062;
+}
+
+article p:first-of-type {
+  font-weight: 600;
+}
+
+:lang(uk) {
+  hyphens: auto;
+}
+
+p::first-line {
+  line-height: 1.7;
+}
+
+h1::before {
+  content: "🛋️ ";
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
